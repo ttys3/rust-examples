@@ -1,3 +1,15 @@
+//! Run with
+//!
+//! ```not_rust
+//! cargo run -p example-rust-afit-demo
+//! ```
+//!
+//! This example shows how to run axum using hyper's low level API.
+//!
+//! The [hyper-util] crate exists to provide high level utilities but its still in early stages of
+//! development.
+//!
+//! [hyper-util]: https://crates.io/crates/hyper-util
 use std::fmt::{Debug, Display};
 use std::future::Future;
 
