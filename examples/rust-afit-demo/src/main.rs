@@ -29,11 +29,15 @@ async fn call<S: Service>(s : S, key: i32) where <S as Service>::Response: Debug
 
 trait Service {
     type Response;
+
+    // uses async_fn_in_trait
     async fn request(&self, key: i32) -> Self::Response;
 }
 
 trait ServiceClassic {
     type Response;
+
+    // uses return_position_impl_trait_in_trait
     fn request(&self, key: i32) -> impl Future<Output = Self::Response>;
 }
 
