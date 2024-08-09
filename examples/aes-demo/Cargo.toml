@@ -1,0 +1,13 @@
+[package]
+name = "aes_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes = "0.8.4"
+cbc = "0.1.2"
+cipher = { version = "0.4.4", features = ["block-padding"] }
+ecb = "0.1.2"
+generic-array = { version = "0.14" }
+hex = "0.4"
+hex-literal = "0.4.1"
